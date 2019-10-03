@@ -1,0 +1,14 @@
+// number 1
+
+select *
+from 
+(select 
+	date, 
+	sum(case when score > 0 then score else 0 end) as num_pos_scores,
+	sum(case when score < 0 then score else 0 end) as num_neg_scores
+from assessments
+group by date)
+where date between 03/01/2011 and 04/30/2011
+
+// number 2
+
