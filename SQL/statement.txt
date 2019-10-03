@@ -12,3 +12,6 @@ where date between 03/01/2011 and 04/30/2011
 
 // number 2
 
+select *
+from assessments
+where score > 0 AND date between 01/01/2011 and 06/30/2011
