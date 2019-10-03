@@ -1,0 +1,5 @@
+1. pgrep -c httpd
+
+2.  for f in mig33/inner.folder/*.dat; do
+        mv -- "$f" "${f%.dat}.txt"
+    done 
